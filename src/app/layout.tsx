@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.scss";
 
-export const SVNGilroyLight = localFont({ src: "../font/SVNGilroy Light.otf" });
+const SVNGilroyLight = localFont({ src: "../font/SVNGilroy Light.otf" });
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
