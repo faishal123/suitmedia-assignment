@@ -1,0 +1,40 @@
+.petSellers {
+  background-color: $grey-20;
+  padding: 40px 130px;
+
+
+  @media (max-width:480px) {
+    padding: 40px 20px;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  h5 {
+    display: inline;
+    color: $base-color-100;
+  }
+}
+
+.companiesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.imageContainer {
+  position: relative;
+  height: 120px;
+  width: 120px;
+
+  >img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}

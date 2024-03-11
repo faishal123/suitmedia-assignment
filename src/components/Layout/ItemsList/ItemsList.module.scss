@@ -1,0 +1,89 @@
+.section {
+  background-color: $grey-20;
+  padding: 60px 130px;
+  color: $black-color;
+  box-sizing: border-box;
+
+
+  @media (max-width:480px) {
+    padding: 60px 20px;
+  }
+}
+
+.container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+  gap: 20px;
+  grid-template-rows: max-content max-content;
+
+  @media (max-width:480px) {
+    grid-gap: 12px;
+    grid-template-columns: max-content max-content;
+  }
+}
+
+.buttonMobileContainer {
+  margin-top: 16px;
+
+  >button {
+    width: 100%;
+  }
+}
+
+.article {
+  background: white;
+  padding: 8px;
+  box-shadow: 0 4px 28px rgba(#000, .08);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.imageContainer {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.image {
+  border-radius: 10px;
+
+}
+
+.textContainer {
+  padding: 8px 8px 20px 8px;
+
+  >span {
+    margin-top: 5px;
+    display: block;
+  }
+}
+
+.greyText {
+  color: $grey-100
+}
+
+.titleContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  h5 {
+    color: $base-color-100
+  }
+}
+
+.freeContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: $light-yellow-100;
+  padding: 8px 6px 8px 6px;
+  border-radius: 8px;
+  font-size: 14px;
+  gap: 5px;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+}

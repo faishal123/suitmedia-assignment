@@ -1,0 +1,42 @@
+.button {
+  padding: 0 28px;
+  height: 44px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 8px;
+
+  svg {
+    margin-left: 10px;
+  }
+}
+
+.primary {
+  background: $base-color-100;
+  color: white;
+}
+
+.secondary {
+  border: 2px solid $base-color-100;
+  color: $base-color-100;
+  background-color: transparent;
+}
+
+.primary:hover {
+  background-color: rgba($base-color-100, 80%);
+}
+
+.secondary:hover {
+  background-color: rgba($base-color-100, 10%);
+}
+
+.rounded {
+  border-radius: 22px;
+}

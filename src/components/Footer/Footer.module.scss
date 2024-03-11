@@ -1,0 +1,125 @@
+.footer {
+  padding: 80px 130px 40px 130px;
+  background: linear-gradient(135deg, rgba(252, 238, 213, 1) 50%, rgba(255, 231, 186, 1) 100%);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+
+  @media (max-width:480px) {
+    display: block;
+    padding: 40px 16px 20px 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+
+.newsLetter {
+  padding: 32px;
+  background-color: $base-color-100;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  >h5 {
+    max-width: 380px;
+  }
+
+  >:nth-child(2) {
+    flex-grow: 1;
+  }
+
+  @media (max-width:480px) {
+    display: block;
+    padding: 16px;
+  }
+}
+
+.inputContainer {
+  padding: 12px;
+  display: flex;
+  background-color: white;
+  border-radius: 14px;
+  gap: 12px;
+
+  >:first-child {
+    flex-grow: 1;
+  }
+
+  >button {
+    min-width: 165px;
+  }
+
+  @media (max-width:480px) {
+    margin-top: 16px;
+    display: block;
+
+    >button {
+      margin-top: 12px;
+      width: 100%;
+
+    }
+  }
+}
+
+.footerNav {
+  display: flex;
+  padding: 40px 0 40px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $grey-30;
+  margin-bottom: 40px;
+
+  @media (max-width:480px) {
+    display: block;
+  }
+}
+
+.linksContainer {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (max-width:480px) {
+    gap: unset;
+    justify-content: space-between;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width:480px) {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+.bottomFooter {
+  color: $grey-100;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+
+  span {
+    margin-left: 20px;
+  }
+}
+
+.footerMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  >:first-child {
+    margin-bottom: 32px;
+  }
+
+  >:nth-child(2) {
+    margin-bottom: 8px;
+  }
+}

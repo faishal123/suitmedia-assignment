@@ -1,0 +1,48 @@
+.headerNavigation {
+  color: $base-color-100;
+  display: flex;
+  align-items: center;
+  padding: 30px 130px;
+  justify-content: space-between;
+
+  @media (max-width:480px) {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.buttonContainer {
+  margin-right: 25px;
+}
+
+.inputContainer {
+  margin-right: 16px;
+}
+
+.navigationContainer {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-right: 36px;
+
+  @media (max-width:480px) {
+    margin-right: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+}
+
+.rightHeader {
+  display: flex;
+  align-items: center;
+}
+
+.joinButton {
+  min-width: 205px;
+  padding-bottom: 4px;
+}
